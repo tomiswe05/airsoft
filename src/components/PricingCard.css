@@ -1,0 +1,77 @@
+.pricin{
+    width: 280px;
+    height: 300px;
+    border: 1px solid #219EBC; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    padding: 10px 20px;
+    font-family: 'Lato', sans-serif;
+}
+/* glassmorphism effect for last card */
+.glass-card {
+    background: rgba(33, 158, 188, 0.15);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1.5px solid #000;
+}
+/* subtle shadow and hover effect for the card */
+.pricin{
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    transition: box-shadow 200ms ease, transform 200ms ease;
+    border-radius: 8px;
+}
+.pricin:hover{
+    box-shadow: 0 18px 36px rgba(0,0,0,0.14);
+    transform: translateY(-6px);
+}
+.card-name{
+    text-align: center;
+    font-family: 'lato', sans-serif;
+    font-weight: 700;
+    margin-top: 10px;
+    font-size: clamp(14px, 3vw, 18px);
+}
+.price{
+    text-align: center;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: clamp(24px, 5vw, 38px);
+    color: #219EBC;
+}
+/* offer list: icon on the left of each item */
+.offer-list{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0;
+    margin: 0;
+}
+.offer-item{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    margin: 0;
+}
+.offer-item::before{
+    content: '\2713';
+    color: #219EBC;
+    font-weight: 700;
+    display: inline-block;
+    width: 20px;
+    text-align: center;
+}
+.additional{
+    border: none;
+    border-top: 1px solid #219EBC;
+    padding-top: 10px;
+    margin-top: 10px;
+    color: inherit;
+    /* make the divider touch the card edges by offsetting horizontal padding */
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}

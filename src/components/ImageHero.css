@@ -1,0 +1,109 @@
+/* Card Showcase */
+.card-showcase {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: clamp(10px, 3vw, 20px);
+  gap: clamp(2px, 1vw, 5px);
+  margin-top: clamp(20px, 5vw, 40px);
+  flex-wrap: wrap; /* Allow wrapping on very small screens */
+}
+
+.book-card {
+  width: clamp(80px, 20vw, 120px);
+  height: clamp(100px, 25vw, 150px);
+  border-radius: clamp(4px, 1vw, 8px);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  position: relative;
+  z-index: 1;
+  flex-shrink: 0; /* Prevent cards from shrinking too much */
+}
+
+.book-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  max-width: 100%;
+}
+
+.book-card.rotate-left {
+  transform: rotate(-15deg);
+  z-index: 0;
+}
+
+.book-card.rotate-right {
+  transform: rotate(15deg);
+  z-index: 0;
+}
+
+.book-card.center-card {
+  transform: rotate(0deg) scale(1.05);
+  z-index: 1000;
+}
+
+/* Tablet adjustments */
+@media (max-width: 768px) {
+  .card-showcase {
+    gap: clamp(3px, 1.5vw, 8px);
+  }
+  
+  .book-card.rotate-left {
+    transform: rotate(-12deg);
+  }
+  
+  .book-card.rotate-right {
+    transform: rotate(12deg);
+  }
+  
+  .book-card.center-card {
+    transform: rotate(0deg) scale(1.08);
+  }
+}
+
+/* Mobile adjustments */
+@media (max-width: 480px) {
+  .card-showcase {
+    padding: clamp(8px, 2vw, 15px);
+    gap: clamp(2px, 1vw, 4px);
+  }
+  
+  .book-card {
+    width: clamp(70px, 22vw, 100px);
+    height: clamp(90px, 28vw, 125px);
+  }
+  
+  .book-card.rotate-left {
+    transform: rotate(-10deg);
+  }
+  
+  .book-card.rotate-right {
+    transform: rotate(10deg);
+  }
+  
+  .book-card.center-card {
+    transform: rotate(0deg) scale(1.1);
+  }
+}
+
+/* Very small screens */
+@media (max-width: 320px) {
+  .card-showcase {
+    gap: 1px;
+  }
+  
+  .book-card {
+    width: clamp(60px, 24vw, 80px);
+    height: clamp(75px, 30vw, 100px);
+  }
+  
+  .book-card.rotate-left {
+    transform: rotate(-8deg);
+  }
+  
+  .book-card.rotate-right {
+    transform: rotate(8deg);
+  }
+}

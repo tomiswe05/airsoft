@@ -1,0 +1,65 @@
+.pricing-text{
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    margin-top: 30px;
+}
+.pricing-text h1{
+    font-size: clamp(20px, 6vw, 35px);
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 auto 16px auto;
+    padding: 0 15px;
+}
+.pricing-span{
+    color: #219EBC;
+}
+.pricing-text p{
+    font-size: clamp(14px, 3vw, 16px);
+    font-weight: 400;
+    color: #d0d0d0;
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 0 15px;
+    text-align: center;
+}
+
+.pricing-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+    align-items: stretch;
+    margin: 40px auto 0 auto;
+    max-width: 1200px;
+}
+
+@media (max-width: 900px) {
+    .pricing-cards {
+        gap: 20px;
+        max-width: 100vw;
+    }
+    .pricin {
+        width: 45vw;
+        min-width: 220px;
+        max-width: 340px;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .pricing-cards {
+        flex-direction: column;
+        gap: 16px;
+        align-items: center;
+    }
+    .pricin {
+        width: 90vw;
+        min-width: 180px;
+        max-width: 98vw;
+        margin-left: 0;
+    }
+    .pricing-text h1 {
+        font-size: clamp(22px, 7vw, 32px);
+    }
+}

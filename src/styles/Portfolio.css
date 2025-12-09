@@ -1,0 +1,49 @@
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.portfolio-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 0 20px; /* Add padding for better mobile spacing */
+}
+
+/* 📱 Mobile (Portrait) - 320px to 480px */
+@media (max-width: 480px) {
+    .portfolio-container {
+        flex-direction: column;
+        gap: 20px;
+        flex-wrap: nowrap;
+        padding: 0 15px;
+    }
+}
+
+/* 📱 Mobile (Landscape) & Small Tablets - 481px to 768px */
+@media (min-width: 481px) and (max-width: 768px) {
+    .portfolio-container {
+        flex-direction: row;
+        gap: 25px;
+        justify-content: center;
+    }
+  }
+
+  /* 💻 Tablets - 769px to 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .portfolio-container {
+        gap: 40px;
+    }
+}
+
+/* 🖥️ Desktop - 1025px to 1440px */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .portfolio-container {
+        gap: 50px;
+    }
+}
