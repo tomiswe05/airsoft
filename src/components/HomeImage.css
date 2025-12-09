@@ -226,24 +226,7 @@
 }
 
 /* Pages Effect - Right Edge */
-.gallery-image-wrapper::after {
-    content: '';
-    position: absolute;
-    right: -4px;
-    top: 4px;
-    bottom: 4px;
-    width: 6px;
-    background: linear-gradient(90deg,
-        #e8e4dc 0%,
-        #f5f3ef 20%,
-        #e8e4dc 40%,
-        #f5f3ef 60%,
-        #e8e4dc 80%,
-        #f0ede8 100%);
-    border-radius: 0 2px 2px 0;
-    box-shadow: 2px 0 4px rgba(0, 0, 0, 0.15);
-    z-index: 1;
-}
+
 
 /* Book Bottom Shadow */
 .gallery-item::before {

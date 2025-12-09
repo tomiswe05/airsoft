@@ -9,7 +9,8 @@ function Home() {
     <>
       <div className="home-container">
         {/*/ Hero Section */}
-        <h1>Discover the world’s best <span>Fantasy Book <br /> Cover </span>Design</h1>
+       <div className="hero">
+         <h1>Discover the world’s best <span>Fantasy Book <br /> Cover </span>Design</h1>
         <ImageHero />
 
         <p>We help self-published fantasy authors enchant readers at first glance,
@@ -19,7 +20,8 @@ function Home() {
          <div className="home-button">
             <button>View Portfolio</button>
          </div>
-          {/* Offer Component - the buttons that toggle the images */}
+       </div>
+          {/* Offer Component - the different offers available */}
           <Offer />
           {/* Home Image Component - the images that change based on the offer selected */}
           <HomeImage />

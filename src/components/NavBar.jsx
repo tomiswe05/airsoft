@@ -11,6 +11,7 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
+  // Handle scroll to add/remove scrolled class
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 0) {
