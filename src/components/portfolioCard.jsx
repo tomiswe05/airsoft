@@ -1,4 +1,4 @@
-import './portfolioCard.css'
+import './PortfolioCard.css'
 
 function PortfolioCard({card}) {
   return (
