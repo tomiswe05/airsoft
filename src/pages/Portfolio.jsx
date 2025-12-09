@@ -1,4 +1,4 @@
-import "../styles/portfolio.css";
+import "../styles/Portfolio.css";
 import PortfolioCard from "../components/portfolioCard";
 import Select from "../components/Select";
 import image1 from '../assets/images/bk1.jpg';
