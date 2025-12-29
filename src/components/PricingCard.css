@@ -1,6 +1,6 @@
 .pricin{
     width: clamp(220px, 30vw, 320px);
-    height: clamp(240px, 32vw, 320px);
+    height: clamp(340px, 45vw, 480px);
     border: 1px solid #219EBC; 
     display: flex;
     flex-direction: column;
@@ -31,13 +31,13 @@
     font-family: 'lato', sans-serif;
     font-weight: 700;
     margin-top: 10px;
-    font-size: clamp(16px, 3vw, 24px);
+    font-size: clamp(20px, 4vw, 32px);
 }
 .price{
     text-align: center;
     font-family: inherit;
     font-weight: 600;
-    font-size: clamp(22px, 5vw, 36px);
+    font-size: clamp(32px, 6vw, 52px);
     color: #219EBC;
 }
 /* offer list: icon on the left of each item */
@@ -69,7 +69,6 @@
     padding-top: 10px;
     margin-top: 10px;
     color: inherit;
-    font-size: 1.15em;
     /* make the divider touch the card edges by offsetting horizontal padding */
     margin-left: -20px;
     margin-right: -20px;
@@ -93,10 +92,6 @@
         max-width: 98vw;
         min-width: 180px;
         margin: 0 auto;
-        height: clamp(340px, 70vw, 420px);
-    }
-    .additional {
-        font-size: 0.95em;
     }
 }
 

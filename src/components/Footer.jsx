@@ -17,6 +17,10 @@ const Footer = () => {
           <div className="footer-section">
             <h3>We want to hear from you</h3>
             <button className="chat-button">Let's chat</button>
+            <div className='contact'>
+              <p>Address: 38 Cornhill, London EC3V 3NG, UK</p>
+              <p>Phone Business number : +44 7445 230599  </p>
+            </div>
           </div>
 
           <div className="footer-section">
@@ -52,8 +56,8 @@ const Footer = () => {
 
           <div className="footer-section">
             <p className="email-text">You can also send an email to</p>
-            <a href="mailto:Samuel@airsoftstudios.com" className="email-link">
-              Samuel@airsoftstudios.com
+            <a href="mailto:Airsoftstudios01@gmail.com  " className="email-link">
+              Airsoftstudios01@gmail.com  
             </a>
           </div>
         </div>

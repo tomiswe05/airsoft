@@ -129,15 +129,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(135deg, rgba(33, 158, 188, 0.1) 0%, rgba(96, 108, 56, 0.1) 100%);
-    border-radius: 50%;
-    color: #219EBC;
+    border-radius: 16px;
     transition: all 0.4s ease;
 }
 
 .carousel-card:hover .card-icon {
     transform: scale(1.1) rotate(5deg);
-    background: linear-gradient(135deg, rgba(33, 158, 188, 0.15) 0%, rgba(96, 108, 56, 0.15) 100%);
 }
 
 .card-icon svg {

@@ -4,6 +4,7 @@ import HomeImage from "../components/HomeImage";
 import Timeline from "../components/Timeline";
 import "../styles/Home.css";
 import Different from "../components/Different";
+import Faq from "../components/Faq";
 function Home() {
   return (
     <>
@@ -72,6 +73,8 @@ function Home() {
           </div>
           {/* Different Component */}
           <Different />
+
+          <Faq />
 
       </div>
     </>

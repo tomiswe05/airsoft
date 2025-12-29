@@ -26,6 +26,14 @@ export const offerData = [
     },
     {
         id: 3,
+        icon: Palette,
+        title: "Creative Excellence",
+        subtitle: "Stunning Designs",
+        description: "At Airsoft Studios, we combine artistic expertise with your unique vision to create covers that stand out in the fantasy genre.",
+        color: "#f38181"
+    },
+    /*{
+        id: 4,
         icon: Sparkles,
         title: "Magic in Every Design",
         subtitle: "Communicate Your Story",
@@ -55,5 +63,5 @@ export const offerData = [
         subtitle: "Quick Turnaround",
         description: "Self-published indie authors deserve professional quality without the wait. We deliver stunning covers efficiently and affordably.",
         color: "#fcbad3"
-    }
+    }*/
 ];

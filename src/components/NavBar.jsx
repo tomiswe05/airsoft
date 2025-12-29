@@ -11,6 +11,10 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
+  const closeMenu = () => {
+    setIsOpen(false);
+  };
+
   // Handle scroll to add/remove scrolled class
   useEffect(() => {
     const handleScroll = () => {
@@ -37,11 +41,11 @@ const Navbar = () => {
 
       <div className={`nav-container ${isOpen ? "active" : ""}`}>
         <div className="links">
-          <Link to="/">Home</Link>
-          <Link to="/about">About</Link>
-          <Link to="/portfolio">Portfolio</Link>
-          <Link to="/pricing">Pricing</Link>
-          <Link to="/blog">Blog</Link>
+          <Link to="/" onClick={closeMenu}>Home</Link>
+          <Link to="/about" onClick={closeMenu}>About</Link>
+          <Link to="/portfolio" onClick={closeMenu}>Portfolio</Link>
+          <Link to="/pricing" onClick={closeMenu}>Pricing</Link>
+          <Link to="/blog" onClick={closeMenu}>Blog</Link>
         </div>
         <div className="button">
           <button>
