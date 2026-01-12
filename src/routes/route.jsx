@@ -7,6 +7,8 @@ import Pricing from '../pages/Pricing';
 import Blog from '../pages/Blog';
 import BlogArticle from '../pages/BlogArticle';
 import Commitments from '../pages/Commitments';
+import Terms from '../pages/Terms';
+import Privacy from '../pages/Privacy';
 
 const router = createBrowserRouter([
   {
@@ -40,6 +42,14 @@ const router = createBrowserRouter([
       {
         path: 'commitments',
         element: <Commitments />,
+      },
+      {
+        path: 'terms',
+        element: <Terms />,
+      },
+      {
+        path: 'privacy',
+        element: <Privacy />,
       },
     ],
   },

@@ -1,4 +1,3 @@
-// Select.jsx
 import './Select.css'
 import Display from './Display';
 import { useState } from 'react';
@@ -12,12 +11,19 @@ function Select() {
         setCustomOpen(false);
     };
 
-    const options = ['All', 'Apple', 'Banana', 'Orange', 'Mango', 'Grapes'];
-    
+    const options = [
+        'All',
+        'Hyper Realism',
+        'Minimalism',
+        'Semi-Realism',
+        'Realism',
+        'Trilogy'
+    ];
+
     return (
         <>
             <h3 className='cover-title'>Our Covers</h3>
-          
+
             {/* Mobile/Tablet Dropdown */}
             <div className="select-container mobile-only">
                 <div className="dropdown">
