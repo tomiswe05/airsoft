@@ -142,7 +142,7 @@ function Different() {
     return(
         <>
         <div className="different-container">
-            <h3>What Makes Us Different?</h3>
+            <h2>What Makes Us Different?</h2>
             <p>We give holistic solutions with strategy, book cover design & full print illustration.</p>
             
             <div className="carousel-container">
